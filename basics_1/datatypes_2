@@ -1,0 +1,16 @@
+
+"use scripts"; //treats old code as new
+
+// alert(3 + 3) // we are using node js not browser so should not use like this
+
+let name = "feroz"
+let age = 25
+let isLoggedIn = false
+let state; // this  is undefined
+
+//numner => 2 to the powerof 53
+//bigint => when stores large numbers 
+//string => ""
+// bollean => true or false 
+// null => standalone value
+//undefined
