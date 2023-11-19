@@ -28,3 +28,37 @@
  }
 
  console.log(typeof myFunction);
+
+
+
+ // **********************************************************************
+
+// stack and heapmemory 
+
+// stack (primitive) , heap (non primitive)
+
+
+let myProject = "Javascript"  //stored in the stackmemory
+
+ let mySecondproject=myProject  //this is the copy made of the variable original
+
+ mySecondproject="ReactJs"
+
+console.log(myProject); //original is still there
+
+console.log(mySecondproject);
+
+
+//nonprimitive (heap memory)
+
+let userOne = {            
+   email: "feroz@gmail.com",
+   upi: "user@ybl"
+};
+
+let userTwo = userOne
+
+userTwo.email = "fs@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
