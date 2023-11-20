@@ -39,4 +39,23 @@ function loginuserMessage(username = 'fer'){
     return `${username} just logged in`
     }
 
-console.log(loginuserMessage("feroz"));
+// console.log(loginuserMessage("feroz"));
+
+ function prices(...num){
+    return num
+ }
+
+ console.log(prices(100,500,456,478));
+
+ // 
+
+ const username ={
+    fisrtname:"Feroz",
+    pno: 8374315619
+ }
+
+ function printdetails(objectName){
+    return console.log(`${objectName.fisrtname} phone number is ${username.pno}`);
+ }
+
+ printdetails(username);
