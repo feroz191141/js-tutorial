@@ -20,8 +20,12 @@ console.log(newanotherArray);
 
 console.log(Array.isArray("Feroz"));
 console.log(Array.from("Feroz"));
-console.log(Array.from({name : 'feroz'}));
 
+console.log(Array.from(({name : 'feroz'})));  // will not return anything
+console.log(Array.from(Object.keys({name : 'feroz'})));
+ // will return keys beacuse when  object should should specify array of keys or values
+
+ console.log(Array.from(Object.entries({name : 'feroz'}))); //key value pair both
 
 let score1=100
 let score2 = 200

@@ -27,7 +27,7 @@ const jsUser = {
 // console.log(jsUser.email);
 
 
-//function in objects
+//function in objects creation
 
 jsUser.greeting = function(){
     console.log("Hello User");

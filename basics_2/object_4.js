@@ -44,5 +44,9 @@ const obj3 = {...obj1,...obj2}
 
 
 
-const {isLoggedIn} = tinderUser
-console.log(isLoggedIn);
+const {
+    
+} = tinderUser // to pull the value from object (destructuring)
+console.log(
+    
+);
