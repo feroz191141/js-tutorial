@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feroz code/ DOM</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // function addLanguage (langName){
+    //     const li = document.createElement('li')
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').appendChild(li)
+    // }
+
+    //but good practice is 
+     function addLanguage (langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("java")
+    addLanguage("pythhon")
+
+    //edit
+
+    const value = document.querySelector('li:nth-child(2)')
+    const newValue = document.createElement('li')
+    newValue.appendChild(document.createTextNode("mojo"))
+    value.replaceWith(newValue)
+
+    const firstOne = document.querySelector('li') //cahnges first elemenent
+                        //because it selects only fisrt element as we know 
+    firstOne.outerHTML = `<li>typescript</li>`
+    
+    //remove
+
+    const firstOneRemove = document.querySelector('li') //cahnges first elemenent
+                        //because it selects only fisrt element as we know 
+    // firstOneRemove.remove()
+
+</script>
+</html>
