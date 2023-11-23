@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FerozCoding</title>
+</head>
+<body>
+    <h1>Feroz aur coding</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+//    const interval = setInterval(function(str){
+//         console.log(str)
+//     },1000,"Feroz")
+
+//     clearInterval(interval)
+
+const startButton = document.querySelector('#start')
+const stopButton = document.getElementById('stop')
+
+let startFunction;
+
+startButton.addEventListener('click',function(){
+    if(startFunction === null){
+    startFunction = setInterval(function(str){
+        console.log(str);
+    },1000,"Feroz")}
+});
+stopButton.addEventListener('click',function(){
+console.log("cliecked and stopped");
+clearInterval(startFunction)
+startFunction = null;  
+
+})
+   
+</script>
+</html>
